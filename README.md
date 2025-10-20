@@ -9,6 +9,24 @@ This is a dummy project that we have composed for demonstration purposes.
 - MongoDB
 
 ## Setup Instructions
+
+### Option 1: Using Docker (Recommended)
+1. Install Docker and Docker Compose
+2. Run `docker compose -f docker-compose.dev.yml up` to start the application
+3. The server will be running at `http://localhost:3000`
+4. MongoDB will be available at `mongodb://localhost:27017/scheduler`
+
+To stop the containers, run:
+```bash
+docker compose -f docker-compose.dev.yml down
+```
+
+To rebuild the containers after code changes:
+```bash
+docker compose -f docker-compose.dev.yml up --build
+```
+
+### Option 2: Local Setup
 1. Install Node 22+
 2. Install MongoDB 6+
 3. Run `npm install` to install dependencies
