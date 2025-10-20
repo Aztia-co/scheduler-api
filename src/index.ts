@@ -1,20 +1,10 @@
 import express from 'express';
+import type { AvailabilityRequest } from './models/availability.js';
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
-
-interface AvailabilitySlot {
-  day: string;
-  startTime: string;
-  endTime: string;
-}
-
-interface AvailabilityRequest {
-  userId: string;
-  availability: AvailabilitySlot[];
-}
 
 app.get('/', (req, res) => {
   res.send('Hello, API is running!');
