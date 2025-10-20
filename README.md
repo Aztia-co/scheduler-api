@@ -12,8 +12,12 @@ This is a dummy project that we have composed for demonstration purposes.
 1. Install Node 22+
 2. Install MongoDB 6+
 3. Run `npm install` to install dependencies
-4. Run `npm run dev` to start the development server
-5. The server will be running at `http://localhost:3000`
+4. Copy `.env.example` to `.env` and set your environment variables.
+
+   The default recommended is there, but for security reasons, API_KEYS should not be shared in this example document. Ask a team member to download them.
+
+5. Run `npm run dev` to start the development server
+6. The server will be running at `http://localhost:3000`
 
 ## Repository Features
 
